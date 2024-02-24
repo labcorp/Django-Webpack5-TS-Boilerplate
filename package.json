@@ -1,0 +1,35 @@
+{
+  "name": "django-webpack5-bootstrap-ts-boilerplate",
+  "version": "1.2.0",
+  "description": "Minimal Django with Webpack, Typescript and Bootstrap setup!",
+  "author": "Leandro Voltolino",
+  "license": "MIT",
+  "scripts": {
+    "serve": "yarn run webpack --watch --progress --env development --mode development",
+    "build": "yarn run webpack --env production --mode production",
+    "test": "jest",
+    "lint": "eslint ./src/**/*.ts"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.10.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.0.1",
+    "postcss-loader": "^8.1.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-bundle-tracker": "^3.0.1",
+    "webpack-cli": "^5.1.4",
+    "bootstrap": "^5.3.3",
+    "@popperjs/core": "^2.11.8"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "pylint.args": [
+        "--django-settings-module=conf.settings.development",
+        "--load-plugins", "pylint_django"
+    ],
+}

@@ -1,0 +1,30 @@
+{
+  "status": "done",
+  "assets": {
+    "main.css": {
+      "name": "main.css",
+      "path": "/usr/src/app/_static/src/main.css",
+      "publicPath": "/static/src/main.css"
+    },
+    "main.js": {
+      "name": "main.js",
+      "path": "/usr/src/app/_static/src/main.js",
+      "publicPath": "/static/src/main.js"
+    },
+    "vendors.js": {
+      "name": "vendors.js",
+      "path": "/usr/src/app/_static/src/vendors.js",
+      "publicPath": "/static/src/vendors.js"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main.css",
+      "main.js"
+    ],
+    "vendors": [
+      "vendors.js"
+    ]
+  },
+  "publicPath": "/static/src/"
+}
