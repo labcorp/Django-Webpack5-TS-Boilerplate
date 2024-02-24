@@ -5,28 +5,32 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Django",
-            "type": "python",
-            "request": "launch",
-            "justMyCode": false,
-            "program": "${workspaceFolder}/manage.py",
-            "args": [
-                "runserver"
-            ],
-            "django": true
-        },
-        {
             "name": "Docker: Django",
-            "type": "python",
+            "type": "debugpy",
             "request": "attach",
+            "django": true,
+            "justMyCode": false,
             "pathMappings": [
                 {
                     "localRoot": "${workspaceFolder}",
                     "remoteRoot": "/usr/src/app"
                 }
             ],
-            "port": 3000,
-            "host": "127.0.0.1",
-            }
+            "connect": {
+                "port": 3000,
+                "host": "127.0.0.1",
+            },
+        },
+        {
+            "name": "Django",
+            "type": "debugpy",
+            "request": "launch",
+            "django": true,
+            "justMyCode": false,
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+        },
     ]
 }

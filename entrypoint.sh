@@ -3,7 +3,7 @@
 # python manage.py flush --no-input
 python manage.py migrate
 
-# admin themes
+# admin themes (install only once or will be replaced)
 # python manage.py loaddata admin_interface_theme_django.json
 # python manage.py loaddata admin_interface_theme_bootstrap.json
 # python manage.py loaddata admin_interface_theme_foundation.json
